@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.ReceberParcelaController">
+   <children>
+      <ImageView fitHeight="422.0" fitWidth="642.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabela" editable="true" layoutX="47.0" layoutY="46.0" prefHeight="251.0" prefWidth="566.0">
+        <columns>
+            <TableColumn fx:id="select" prefWidth="38.0" text="Sel" />
+          <TableColumn fx:id="numero" prefWidth="212.0" text="Número da Parcela" />
+            <TableColumn fx:id="valor" prefWidth="111.0" text="Valor R$" />
+            <TableColumn fx:id="validade" prefWidth="108.0" text="Validade" />
+            <TableColumn fx:id="Status" prefWidth="96.0" text="Satatus" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnReceber" layoutX="47.0" layoutY="347.0" mnemonicParsing="false" onAction="receber" prefHeight="25.0" prefWidth="103.0" text="Receber">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEmitir" layoutX="279.0" layoutY="347.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Emitir">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="510.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="103.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+   
+</AnchorPane>

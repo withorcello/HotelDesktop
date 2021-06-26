@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="747.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastrarFornecedorController">
+   <children>
+      <ImageView fitHeight="460.0" fitWidth="606.0" layoutX="72.0" layoutY="1.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="43.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="48.51171737909317" />
+      <JFXTextField fx:id="txtNome" focusColor="BLACK" layoutX="94.0" layoutY="44.0" prefHeight="31.0" prefWidth="221.0" />
+      <Text layoutX="325.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNPJ:" />
+      <JFXTextField fx:id="txtCNPJ" focusColor="BLACK" layoutX="367.0" layoutY="44.0" prefHeight="31.0" prefWidth="124.0" />
+      <Text layoutX="43.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Razão Social:" />
+      <JFXTextField fx:id="txtRazao" focusColor="BLACK" layoutX="132.0" layoutY="99.0" prefHeight="31.0" prefWidth="316.0" />
+      <Text layoutX="504.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:" />
+      <JFXTextField fx:id="txtTelefone" focusColor="#071336" layoutX="567.0" layoutY="44.0" prefHeight="31.0" prefWidth="139.0" />
+      <Text layoutX="460.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <JFXTextField fx:id="txtEmail" focusColor="BLACK" layoutX="502.0" layoutY="100.0" prefHeight="31.0" prefWidth="204.0" />
+      <Pane layoutX="43.0" layoutY="194.0" prefHeight="171.0" prefWidth="663.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;">
+         <children>
+            <Text layoutX="15.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="15.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="470.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtCep" focusColor="BLACK" layoutX="499.0" layoutY="100.0" prefHeight="31.0" prefWidth="139.0" unFocusColor="BLACK" />
+            <Text layoutX="224.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N°:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="Numero" focusColor="BLACK" layoutX="247.0" layoutY="100.0" prefHeight="31.0" prefWidth="60.0" unFocusColor="BLACK" />
+            <Text layoutX="329.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="comboUf" focusColor="BLACK" layoutX="353.0" layoutY="100.0" prefHeight="31.0" prefWidth="100.0">
+                <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="AC" />
+                            <String fx:value="AL" />
+                            <String fx:value="AM" />
+                            <String fx:value="AP" />
+                            <String fx:value="BA" />
+                            <String fx:value="CE" />
+                            <String fx:value="DF" />
+                            <String fx:value="ES" />
+                            <String fx:value="GO" />
+                            <String fx:value="MA" />
+                            <String fx:value="MG" />
+                            <String fx:value="MS" />
+                            <String fx:value="MT" />
+                            <String fx:value="PA" />
+                            <String fx:value="PB" />
+                            <String fx:value="PE" />
+                            <String fx:value="PI" />
+                            <String fx:value="PR" />
+                            <String fx:value="RJ" />
+                            <String fx:value="RN" />
+                            <String fx:value="RO" />
+                            <String fx:value="RR" />
+                            <String fx:value="RS" />
+                            <String fx:value="SC" />
+                            <String fx:value="SE" />
+                            <String fx:value="SP" />
+                            <String fx:value="TO" />
+                        </FXCollections>
+                    </items>
+                </JFXComboBox>
+            <JFXTextField fx:id="txtRua" focusColor="BLACK" layoutX="45.0" layoutY="100.0" prefHeight="31.0" prefWidth="174.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtCidade" focusColor="BLACK" layoutX="62.0" layoutY="30.0" prefHeight="31.0" prefWidth="253.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtBairro" focusColor="BLACK" layoutX="372.0" layoutY="30.0" prefHeight="31.0" prefWidth="267.0" unFocusColor="BLACK" />
+            <Text layoutX="323.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro:" wrappingWidth="46.02636456489563">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text layoutX="42.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço:" />
+      <JFXButton layoutX="604.0" layoutY="398.0" onAction="#Salvar" prefHeight="39.0" prefWidth="100.0" text="Salvar" />
+      <JFXButton layoutX="454.0" layoutY="398.0" onAction="#Cancelar" prefHeight="39.0" prefWidth="100.0" text="Cancelar" />
+   </children>
+</AnchorPane>

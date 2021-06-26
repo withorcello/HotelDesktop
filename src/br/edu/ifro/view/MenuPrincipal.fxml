@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="1800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.MenuPrincipalController">
+   <children>
+      <HBox prefHeight="922.0" prefWidth="1800.0" style="-fx-background-color: WHITE;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="922.0" prefWidth="200.0" style="-fx-background-color: #A9A9A9;">
+               <children>
+                  <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="70.0" prefWidth="201.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #808080;" text="Caixa" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Recebimento" />
+                        <MenuItem mnemonicParsing="false" text="Pagamento" />
+                     </items>
+                     <font>
+                        <Font name="Candara" size="19.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="70.0" prefWidth="260.0" style="-fx-border-color: #808080; -fx-background-color: #A6A6A6;" text="Hospedagem" textFill="WHITE">
+                     <font>
+                        <Font name="Candara" size="19.0" />
+                     </font>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Hospedar" text="Hospedar" />
+                     </items>
+                  </MenuButton>
+                  <MenuButton mnemonicParsing="false" popupSide="RIGHT" prefHeight="70.0" prefWidth="243.0" style="-fx-background-color: #A9A9A9A9; -fx-border-color: #808080;" text="Cadastros" textAlignment="CENTER" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#cadastroCliente" text="Cliente" />
+                        <MenuItem mnemonicParsing="false" onAction="#cadastroQuartos" text="Quartos" />
+                        <MenuItem mnemonicParsing="false" onAction="#cadastroFuncionario" text="Funcionário" />
+                        <MenuItem mnemonicParsing="false" onAction="#cadastroProdutos" text="Produtos" />
+                        <MenuItem mnemonicParsing="false" onAction="#cadastroFornecedor" text="Fornecedor" />
+                        <MenuItem mnemonicParsing="false" onAction="#CadastrarUsuario" text="Usuário" />
+                     </items>
+                     <font>
+                        <Font name="Candara" size="19.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" popupSide="RIGHT" prefHeight="70.0" prefWidth="241.0" style="-fx-background-color: #A9A9A9; -fx-border-color: #808080;" text="Relatórios" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Despesas" />
+                        <MenuItem mnemonicParsing="false" text="Vendas" />
+                        <MenuItem mnemonicParsing="false" text="Hospedagens" />
+                        <MenuItem mnemonicParsing="false" onAction="#RelatorioClientes" text="Clientes" />
+                     </items>
+                     <font>
+                        <Font name="Candara" size="19.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+            </VBox>
+            <Pane prefHeight="874.0" prefWidth="1609.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <ImageView fitHeight="409.0" fitWidth="547.0" layoutX="540.0" layoutY="262.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../img/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

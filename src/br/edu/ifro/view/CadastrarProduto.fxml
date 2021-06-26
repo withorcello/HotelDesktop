@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.validation.ValidationFacade?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="360.0" prefWidth="460.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastrarProdutoController">
+   <children>
+      <ImageView fitHeight="372.0" fitWidth="480.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblNome" layoutX="62.0" layoutY="56.0" text="Nome:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFornecedor" layoutX="62.0" layoutY="150.0" text="Fornecedor:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNome" focusColor="BLACK" layoutX="134.0" layoutY="56.0" prefHeight="30.0" prefWidth="276.0" />
+      <ValidationFacade layoutX="193.0" layoutY="230.0" />
+      <JFXButton layoutX="329.0" layoutY="294.0" onAction="#Salvar" prefHeight="40.0" prefWidth="112.0" text="Salvar" />
+      <JFXButton layoutX="184.0" layoutY="294.0" onAction="#Cancelar" prefHeight="40.0" prefWidth="112.0" text="Cancelar" />
+      <JFXComboBox fx:id="comboFornecedor" focusColor="BLACK" layoutX="182.0" layoutY="150.0" prefHeight="31.0" prefWidth="228.0" unFocusColor="BLACK" />
+      <Label layoutX="62.0" layoutY="230.0" text="Valor">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtValor" focusColor="BLACK" layoutX="115.0" layoutY="230.0" prefHeight="31.0" prefWidth="105.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.RelatorioClientesController">
+    <children>
+      <Pane prefHeight="156.0" prefWidth="1174.0">
+         <children>
+              <Label alignment="CENTER_RIGHT" prefHeight="86.0" prefWidth="315.0" text="Relatorio de Clientes">
+                  <font>
+                      <Font size="30.0" />
+                  </font>
+              </Label>
+         </children>
+      </Pane>
+        <HBox alignment="CENTER_LEFT" prefHeight="141.0" prefWidth="1174.0" style="-fx-background-color: WHITE;">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="71.0" prefWidth="154.0" text="Nome:" textAlignment="JUSTIFY" textOverrun="CENTER_ELLIPSIS" HBox.hgrow="SOMETIMES">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <JFXTextField focusColor="BLACK" prefHeight="31.0" prefWidth="359.0" unFocusColor="BLACK" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="34.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="32.0" />
+                <JFXButton prefHeight="31.0" prefWidth="138.0" text="Pesquisar">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </HBox>
+        <TableView fx:id="TableClientes" fixedCellSize="0.0" prefHeight="674.0" prefWidth="1174.0" style="-fx-background-color: WHITE;">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+         <columns>
+            <TableColumn prefWidth="433.0" text="Nome">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtNome" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="220.0" text="CPF">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtCPF" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="RG">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtRG" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="Telefone">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtTelefone" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="Cidade">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtCidade" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="Bairro">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtBairro" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="Rua">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtRua" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="Numero">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtNumero" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="CEP">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtCep" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="UF">
+                <cellValueFactory>
+                    <PropertyValueFactory property="txtUF" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="181.0" text="Aniversário">
+                <cellValueFactory>
+                    <PropertyValueFactory property="datanasc" />
+                </cellValueFactory>
+            </TableColumn>
+         </columns>
+        </TableView>
+    </children>
+</VBox>

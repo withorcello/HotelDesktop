@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="716.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.CadastroCliente1Controller">
+    <children>
+        <ImageView fitHeight="522.0" fitWidth="645.0" layoutX="37.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../img/logo.jpg" />
+            </image>
+        </ImageView>
+        <Pane layoutX="27.0" layoutY="238.0" prefHeight="171.0" prefWidth="663.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;">
+            <children>
+                <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="465.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CEP:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <JFXTextField fx:id="txtCep" focusColor="BLACK" layoutX="500.0" layoutY="99.0" prefHeight="25.0" prefWidth="147.0" unFocusColor="BLACK" />
+                <Text layoutX="232.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N°:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <JFXTextField fx:id="txtNumero" focusColor="BLACK" layoutX="265.0" layoutY="100.0" prefHeight="25.0" prefWidth="74.0" unFocusColor="BLACK" />
+                <Text layoutX="348.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UF:">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <JFXComboBox fx:id="uf" layoutX="383.0" layoutY="100.0" prefHeight="25.0" prefWidth="74.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="AC" />
+                            <String fx:value="AL" />
+                            <String fx:value="AM" />
+                            <String fx:value="AP" />
+                            <String fx:value="BA" />
+                            <String fx:value="CE" />
+                            <String fx:value="DF" />
+                            <String fx:value="ES" />
+                            <String fx:value="GO" />
+                            <String fx:value="MA" />
+                            <String fx:value="MG" />
+                            <String fx:value="MS" />
+                            <String fx:value="MT" />
+                            <String fx:value="PA" />
+                            <String fx:value="PB" />
+                            <String fx:value="PE" />
+                            <String fx:value="PI" />
+                            <String fx:value="PR" />
+                            <String fx:value="RJ" />
+                            <String fx:value="RN" />
+                            <String fx:value="RO" />
+                            <String fx:value="RR" />
+                            <String fx:value="RS" />
+                            <String fx:value="SC" />
+                            <String fx:value="SE" />
+                            <String fx:value="SP" />
+                            <String fx:value="TO" />
+                        </FXCollections>
+                    </items>
+                </JFXComboBox>
+            </children>
+        </Pane>
+        <Text layoutX="358.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <JFXRadioButton fx:id="Feminino" layoutX="194.0" layoutY="177.0" text="Feminino">
+            <toggleGroup>
+                <ToggleGroup fx:id="sex" />
+            </toggleGroup>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="Masculino" layoutX="79.0" layoutY="177.0" prefHeight="17.0" prefWidth="54.0" text="Masculino" toggleGroup="$sex">
+        </JFXRadioButton>
+        <JFXTextField fx:id="txtTelefone" focusColor="BLACK" layoutX="364.0" layoutY="56.0" prefHeight="25.0" prefWidth="127.0" unFocusColor="BLACK" />
+        <Text layoutX="303.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:" />
+        <Text layoutX="37.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Endereço" />
+        <JFXTextField fx:id="txtBairro" focusColor="BLACK" layoutX="408.0" layoutY="276.0" prefHeight="25.0" prefWidth="265.0" unFocusColor="BLACK" />
+        <JFXTextField fx:id="txtCidade" focusColor="BLACK" layoutX="89.0" layoutY="276.0" prefHeight="25.0" prefWidth="257.0" unFocusColor="BLACK" />
+        <JFXTextField fx:id="txtRG" focusColor="BLACK" layoutX="542.0" layoutY="59.0" prefHeight="25.0" prefWidth="140.0" unFocusColor="BLACK" />
+        <JFXTextField fx:id="txtRua" focusColor="BLACK" layoutX="71.0" layoutY="337.0" prefHeight="25.0" prefWidth="178.0" unFocusColor="BLACK" />
+        <JFXTextField fx:id="txtCPF" focusColor="BLACK" layoutX="79.0" layoutY="120.0" prefHeight="25.0" prefWidth="178.0" unFocusColor="BLACK" />
+        <Text layoutX="359.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro:" wrappingWidth="48.51171875">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="505.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RG:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="37.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="37.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="37.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <JFXTextField fx:id="txtNome" focusColor="BLACK" layoutX="79.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" unFocusColor="BLACK" />
+        <DatePicker fx:id="dataNasc" layoutX="497.0" layoutY="116.0" prefHeight="31.0" prefWidth="185.0" />
+      <JFXButton layoutX="581.0" layoutY="437.0" onAction="#Salvar" prefHeight="31.0" prefWidth="101.0" text="Salvar" />
+      <JFXButton layoutX="436.0" layoutY="437.0" onAction="#cancelar" prefHeight="31.0" prefWidth="101.0" text="Cancelar" />
+    </children>
+   
+   
+   
+</AnchorPane>

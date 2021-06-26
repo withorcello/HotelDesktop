@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="671.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.control.HospedarController">
+   <children>
+      <ImageView fitHeight="382.0" fitWidth="532.0" layoutX="81.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="417.0" layoutY="50.0" prefHeight="21.0" prefWidth="30.0" text="CPF:" />
+      <Label layoutX="32.0" layoutY="136.0" text="Quarto:" />
+      <Label layoutX="32.0" layoutY="49.0" prefHeight="21.0" prefWidth="50.0" text="Cliente:" />
+      <JFXTextField fx:id="txtCPF" focusColor="BLACK" layoutX="453.0" layoutY="45.0" prefHeight="31.0" prefWidth="187.0" />
+      <JFXTextField fx:id="txtCliente" focusColor="BLACK" layoutX="89.0" layoutY="45.0" prefHeight="31.0" prefWidth="254.0" />
+      <DatePicker fx:id="dateEntrada" layoutX="32.0" layoutY="238.0" prefHeight="31.0" prefWidth="234.0" style="-fx-background-color: LightGrey;" />
+      <DatePicker fx:id="dateSair" layoutX="400.0" layoutY="238.0" prefHeight="31.0" prefWidth="240.0" style="-fx-background-color: lightgrey;" />
+      <Text layoutX="32.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Entrada:" />
+      <Text layoutX="400.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Saida:" />
+      <Text layoutX="383.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº de Pessoas:" wrappingWidth="100.99999512732029" />
+      <JFXComboBox fx:id="comboQuarto" focusColor="BLACK" layoutX="88.0" layoutY="130.0" prefHeight="31.0" prefWidth="274.0" unFocusColor="BLACK" />
+      <JFXButton layoutX="350.0" layoutY="44.0" onAction="#BuscarCliente" prefHeight="33.0" prefWidth="60.0" style="-fx-border-color: #DCDCDC;" text="Buscar">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtQuntiPes" focusColor="BLACK" layoutX="490.0" layoutY="131.0" prefHeight="31.0" prefWidth="150.0" unFocusColor="BLACK" />
+      <JFXButton layoutX="81.0" layoutY="14.0" />
+      <JFXButton layoutX="336.0" layoutY="314.0" onAction="#Cancelar" prefHeight="41.0" prefWidth="128.0" style="-fx-border-color: #DCDCDC;" text="Cancelar" />
+      <JFXButton layoutX="512.0" layoutY="314.0" onAction="#Salvar" prefHeight="41.0" prefWidth="128.0" style="-fx-border-color: #DCDCDC;" text="Salvar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="730.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER_RIGHT" prefHeight="72.0" prefWidth="225.0" text="Pagamento">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="878.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Label prefHeight="20.0" prefWidth="90.0" text="Hospedagem:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox focusColor="BLACK" prefHeight="25.0" prefWidth="135.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Dinheiro" />
+                     <String fx:value="Cartão" />
+                     <String fx:value="Cheque" />
+                  </FXCollections>
+               </items>
+            </JFXComboBox>
+            <Label prefHeight="20.0" prefWidth="41.0" text="Dias:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="BLACK" />
+            <Label text="Funcioário:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="BLACK" prefHeight="25.0" prefWidth="118.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="878.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Label prefHeight="20.0" prefWidth="96.0" text="Valor a pagar:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="BLACK" prefHeight="31.0" prefWidth="108.0" />
+            <Label prefHeight="20.0" prefWidth="148.0" text="Forma de pagamento:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox focusColor="BLACK" prefHeight="25.0" prefWidth="135.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Dinheiro" />
+                     <String fx:value="Cartão" />
+                     <String fx:value="Cheque" />
+                  </FXCollections>
+               </items>
+            </JFXComboBox>
+            <Label prefHeight="20.0" prefWidth="51.0" text="Troco:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="BLACK" prefHeight="31.0" prefWidth="83.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="76.0" prefWidth="878.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Label prefHeight="21.0" prefWidth="68.0" text="Produtos:" />
+            <JFXComboBox prefHeight="31.0" prefWidth="202.0" />
+            <JFXButton prefHeight="31.0" prefWidth="126.0" text="Adicionar" />
+         </children>
+      </HBox>
+      <TreeTableView prefHeight="221.0" prefWidth="878.0">
+         <columns>
+            <TreeTableColumn prefWidth="75.0" text="Produto" />
+            <TreeTableColumn prefWidth="75.0" text="Descrição" />
+            <TreeTableColumn prefWidth="75.0" text="Quantidade" />
+            <TreeTableColumn prefWidth="75.0" text=" Preço" />
+         </columns>
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TreeTableView>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="1026.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="155.0" text="Pesquisar Produto" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="Pagar" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Button mnemonicParsing="false" text="Parcelas" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="55.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
